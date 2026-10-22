@@ -48,6 +48,8 @@ var Vars = []string{
 	"STEP_CODING_AGENT_DIR", "STEPCODE_CONFIG_DIR",
 	// MothX's config folder ($MOTHX_DIR/settings.json)
 	"MOTHX_DIR",
+	// Paseo's custom provider config folder
+	"PASEO_HOME",
 	// omp
 	"OMP_PROFILE",
 	// Qoder's two builds, the global site's and China's

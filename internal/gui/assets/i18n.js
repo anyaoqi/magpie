@@ -3869,6 +3869,7 @@ const I18N = {
     "System One": "System One",
     "Embeddings": "向量嵌入",
     "Audio": "音频",
+    "Magpie asks Paseo to reload its provider config after changes. If reload fails, reopen Paseo. Running agent sessions need a restart to use the change.": "Magpie 会在配置更改后请求 Paseo 重新加载提供商配置。如果重新加载失败，请重新打开 Paseo。已运行的 Agent 会话需要重启后才能使用更改。",
   },
   "zh-TW": {
     "None": "無",
@@ -7721,6 +7722,7 @@ const I18N = {
     "System One": "System One",
     "Embeddings": "向量嵌入",
     "Audio": "音訊",
+    "Magpie asks Paseo to reload its provider config after changes. If reload fails, reopen Paseo. Running agent sessions need a restart to use the change.": "Magpie 會在設定變更後要求 Paseo 重新載入提供者設定。如果重新載入失敗，請重新開啟 Paseo。已執行的 Agent 工作階段必須重新啟動才能使用變更。",
   },
   ja: {
     "None": "なし",
@@ -11575,6 +11577,7 @@ const I18N = {
     "System One": "System One",
     "Embeddings": "埋め込み",
     "Audio": "音声",
+    "Magpie asks Paseo to reload its provider config after changes. If reload fails, reopen Paseo. Running agent sessions need a restart to use the change.": "Magpie は設定変更後に Paseo へプロバイダー設定の再読み込みを依頼します。再読み込みに失敗した場合は Paseo を再度開いてください。実行中のエージェントセッションで変更を使うには再起動が必要です。",
   },
   de: {
     "None": "Keine",
@@ -15429,6 +15432,7 @@ const I18N = {
     "System One": "System One",
     "Embeddings": "Embeddings",
     "Audio": "Audio",
+    "Magpie asks Paseo to reload its provider config after changes. If reload fails, reopen Paseo. Running agent sessions need a restart to use the change.": "Magpie bittet Paseo nach Änderungen, die Provider-Konfiguration neu zu laden. Falls das Neuladen fehlschlägt, öffnen Sie Paseo erneut. Laufende Agent-Sitzungen müssen neu gestartet werden, damit die Änderung wirksam wird.",
   },
 };
 
@@ -15436,6 +15440,7 @@ const I18N = {
 // internal/agent/notice.go), as tNotice matches them; each has its
 // translation above. TestEveryNoticeIsTranslated keeps the two the same.
 const NOTICES = [
+  "Magpie asks Paseo to reload its provider config after changes. If reload fails, reopen Paseo. Running agent sessions need a restart to use the change.",
   "Air runs magpie's models through OpenCode's ACP server, and OpenCode isn't installed here: install OpenCode (npm i -g opencode-ai), then pick Magpie in a new Air task.",
   "Ante reads its catalog at start-up — restart open ante sessions to use this.",
   "AstrBot reads cmd_config.json at start-up and writes it back whole when its WebUI saves settings — restart AstrBot to use this, before saving anything in its WebUI.",

@@ -148,6 +148,7 @@ line; agents connected to magpie lose it when it quits.
 | Snow CLI     | `~/.snow/profiles/magpie.json` (`$SNOW_CONFIG_DIR`), made the active profile and copied to `config.json` | model (the user's other profiles' models too; Snow App takes the profile in with "Sync Snow CLI API config") |
 | Alma         | Alma's local API (`localhost:23001`, while Alma runs; alma-server's data in `$ALMA_DATA_DIR`, `$XDG_DATA_HOME/alma` or `~/.local/share/alma` on Linux) | model (Alma's default; magpie's models as a provider), and Image Generation's model when it is Auto: the one magpie draws with |
 | Lody | Its own confirmation dialog (`lody://provider/import`) | adds selected Claude, Codex, Pi, DSH, Kimi Code, Grok and Bub Providers on the local machine; no settings edited by magpie |
+| Paseo        | `$PASEO_HOME/config.json` (normally `~/.paseo/config.json`) | provider (`agents.providers.magpie-gateway`; reloads Paseo after changes; restart running sessions) |
 
 Provider-scoped agents (OpenCode, MiMo Code, DevEco Code, Pi, OmO, StepCode, MothX, Aside, Goose, Crush, omp, Hermes Agent) take `provider/model`.
 Only agents that are installed or configured are shown.

@@ -171,3 +171,18 @@ reader: `Agent.Added` remains nil and the JSON row omits `added`. The GUI
 shows a confirmation hint for this unknown state; Cindy still reports its
 known true/false status. Reopening the link lets Lody handle duplicates.
 Bub requires its separately installed ACP plugin.
+
+## Paseo
+
+Paseo custom provider aliases live in `$PASEO_HOME/config.json` (normally
+`~/.paseo/config.json`). Magpie adds `agents.providers.magpie-gateway`,
+extending `codex`, with the Magpie gateway URL, a Paseo-specific gateway key,
+and the current Magpie model catalog. The provider field adds or removes that
+alias; a catalog sync refreshes its models only while it is connected.
+Paseo's documented custom Codex provider uses `OPENAI_BASE_URL` and
+`OPENAI_API_KEY` and sends OpenAI Responses API requests, which Magpie
+supports. After changing this managed provider, Magpie asks the Paseo CLI to
+reload it; if the CLI is missing or reload fails, reopen Paseo. Running agent
+sessions must be restarted. Other Paseo providers and config fields are left
+intact. See [`paseo.go`](../../internal/agent/paseo.go) and [Paseo custom
+providers](https://paseo.sh/docs/custom-providers).
